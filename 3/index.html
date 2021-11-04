@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>шляхов Ян САИПИС 3</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="h1">
+                TV-Show survey
+            </h1>
+        </header>
+
+        <nav class="nav" > </nav>
+
+        <article class="main">
+            <form >
+                <fieldset align="center">
+                    <legend>About you</legend>
+                    <div>
+                        Enter your name:(max 20 el)
+                        <input type="text" name="name" id="name" maxlength="20">
+                    </div>
+                </fieldset>
+
+                <fieldset align="center">
+                    <legend>The favourite one</legend>
+                    <div>
+                        Enter your favourite TV site:
+                        <input type="url" id="url" >
+                    </div>
+                </fieldset>
+    
+               <fieldset align="center">
+                   <legend>Your preferences</legend>
+                   <div>
+                       Will tou recommend it?
+                       <input type="checkbox" id="rec">
+                   </div>
+               </fieldset>
+    
+                <fieldset align="center">
+                    <legend>Extra information</legend>
+                    <div>
+                        <br>
+                       Was this test convinient to you&
+                        <p><input id="r1" name="sharp" type="radio" value="yes">Yes</p>
+                        <p><input id="r2" name="sharp" type="radio" value="so-so">so-so</p>
+                        <p><input id="r3" name="sharp" type="radio" value="no" checked>No</p>
+                    </div>
+                    <div>
+                        Your phone number <br>
+                        <input type="tel" id="tel">
+                    </div>
+                    <div>
+                        Your mail address <br>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        The date of purchase<br>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </fieldset>
+    
+                <fieldset align="center" class="button-wrapper" >
+                    <button name="send" type="button" onclick="validate()">Submit</button>
+                    <button name="clear" type="reset" >Reset</button>
+                </fieldset>
+            </form>
+        </article>
+
+        <aside class="aside">
+            <button name="send" type="button" disabled>Main</button>
+            <br><br>
+            <button name="send" type="button" onclick="ShowAll()">Results</button> 
+        </aside>
+        
+        <footer class="footer">
+            <p class="footer-text">
+              Your opinion is really important to us!!
+            </p>
+        </footer>
+    </div>
+</body>

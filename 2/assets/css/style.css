@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.wrapper {
+    background-color: burlywood;
+    z-index: -2;
+}
+
+.header-block {
+    position: relative;
+    width: 700px;
+    height: 250px;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    
+    color: #2E8DEF;
+    background: yellowgreen;
+    border-bottom: 3px solid yellowgreen;
+}
+.header-block:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    background: yellowgreen;
+    border-top: 3px solid yellowgreen;
+    border-left: 20px solid yellowgreen;
+    
+    transform-origin: top right;
+    -ms-transform: skew(130deg, 180deg);
+    -webkit-transform: skew(130deg, 180deg);
+    transform: skew(130deg, 180deg);
+}
+
+.body {
+    background: royalblue;
+    width: 100%;
+    height: 710px;
+    clear:both; 
+    border: 30px solid yellowgreen;
+}
+
+
+#blink1 {
+    -webkit-animation: blink1 3s linear infinite;
+    animation: blink1 3s linear infinite;
+}
+@-webkit-keyframes blink1 {
+    0% { color: rgb(255, 6, 6); }
+    50% { color: rgba(173, 51, 51, 0); }
+    100% { color: rgb(58, 47, 47); }
+}
+@keyframes blink1 {
+    0% { color: rgb(255, 6, 6); }
+    50% { color: rgba(173, 51, 51, 0); }
+    100% { color: rgb(58, 47, 47); }
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+.color-hint {
+    background: linear-gradient(blue, 10%, pink);
+}
+
+.dimonds {
+    position: relative;
+    top: 100px;
+    left: 200px;
+    display:inline-table;
+}
+
+.diamond-shape {
+    background: #fff;
+    height: 160px;
+    text-align: center;
+    transform:rotate(45deg);
+    width:160px;
+    display:table-cell;
+    border: 3px solid yellowgreen;
+}
+.item-count {
+    color: #333;
+    display: table-cell;
+    height: 60px;
+    transform: rotate(-45deg);
+    vertical-align: middle;
+    width:60px;
+}
+
+.blink-wrapper {
+    position: absolute;
+    left: 60px;
+    top: 30px;
+}
+
+.body > p {
+    color: coral;
+    font-size: 1.5em;
+}
+
+table {
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные рамки */
+   }
+   th, td {
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 4px; /* Поля в ячейках */
+   }
+   tr:hover { 
+    background: #d5e6a2; /* Цвет фона */
+   }
+
+.move-to-second {
+    position: absolute;
+    left: 1200px;
+    top: 800px;
+}
+
+.header-second {
+        border-radius: 25px;
+        background-color: yellowgreen;
+        background-position: left top;
+        background-repeat: repeat;
+        padding: 20px;
+        width: 500px;
+        height: 250px;
+}
+
+.radius {
+        border-radius: 50px;
+        background: #55ddff; /* Старые браузеры */
+        background: radial-gradient(#55ddff, black);
+        border: 30px solid yellowgreen;
+}
+
+p.second::first-letter {
+    font-size: 330%;
+}
+
+p.second::after {
+    content: url(../img/1.png);
+}

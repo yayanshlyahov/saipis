@@ -1,0 +1,124 @@
+.general {
+    width: 100%;
+    height: 640px;
+    border: rgb(83, 56, 38) 1.5px solid;
+    background-color:bisque;
+}
+.tde{
+    width: 50%;
+    height: 100%;
+    border:rgb(83, 56, 38) 2px solid;
+    background: url(2.2.jpg) ;
+    background-origin: content-box;
+    opacity: 0.5;
+}
+.pic1{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 18px;
+    left: 365px;
+    animation-name: movement;
+    animation-duration: 8s;
+    animation-direction: normal;
+}
+@keyframes movement{
+    0%{
+        left: 365px;
+        z-index: 7;
+    }
+    50%{
+        top:338px;
+        opacity: 0.3;
+        z-index: 7;
+    }
+    100%{
+        top: 338px;
+        left: 18px;
+        opacity: 0.7;
+        z-index: 7;
+    }
+}
+.pic2{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 118px;
+    left: 250px;
+    z-index: 2;
+}
+.pic3{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 218px;
+    left: 150px;
+    z-index: 4;
+}
+.pic4{
+    position:fixed;
+    width:300px;
+    height:300px;
+    top:338px;
+    left: 18px;
+    z-index: 6;
+}
+h2{
+    position: fixed;
+    top:10px;
+    left: 890px;
+    text-decoration-line: underline;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-size: 20px;
+}
+h2.optional{
+    top:330px;
+    left: 30px;
+    z-index: 8;
+    text-align: left;
+    color:blanchedalmond;
+}
+div.shade{
+    position: fixed;
+    top: 390px;
+    left: 30px;
+    z-index: 8;
+    text-align: left;
+    color:blanchedalmond;
+    text-shadow: 1px 1px 2px gray, 0 0 1em red; /* Параметры тени */
+    width: 250px;
+}
+
+.column{
+    position:fixed;
+    top: 90px;
+    left: 690px;
+    width:660px;
+    columns: 70px 3;
+    column-gap: 15px;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+p.first{
+    font: size 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color:maroon;
+}
+p.second{
+    font-size: 11px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:midnightblue;
+}
+p.third{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkgreen;
+}
+p.forth{
+    font-size:medium;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:darkred;
+}
+
+
