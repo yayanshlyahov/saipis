@@ -1,0 +1,83 @@
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #121212;
+  }
+  
+  div.app {
+    width: 100%;
+    background-color: #121212;
+  }
+  
+  div.add-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 24px;
+  }
+  
+  div.caption-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 54px;
+    color: #ccc;
+    background: linear-gradient(#121212, #333333);
+    font-weight: bold;
+  }
+  
+  div.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 54px;
+    color: #ccc;
+  }
+  
+  div.table > div {
+    padding: 10px;
+    line-height: 53px;
+  }
+  
+  div.caption-table > div {
+    padding: 10px;
+  }
+  
+  div.clear-btn-block > button,
+  div.table > div > button,
+  div.add-block > div > input {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    width: 100%;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    background-color: #121212;
+    border-bottom: 1px solid #ccc;
+    transition: all .5s;
+  }
+  
+  div.add-block > div > input[type="text"]:focus {
+    border-bottom: 1px solid #3a3aff;
+    transition: all .5s;
+  }
+  
+  div.clear-btn-block > button:hover,
+  div.table > div > button:hover,
+  div.add-block > div > input[type="button"]:hover {
+    border-bottom: 1px solid #3a3aff;
+    background-color: #333;
+    transition: all .5s;
+  }
+  
+  div.clear-btn-block > button:active,
+  div.table > div > button:active,
+  div.add-block > div > input[type="button"]:active {
+    border-bottom: 1px solid #0000ff;
+    background-color: #000;
+    transition: all .5s;
+  }
+  
+  div.table-block {
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: none;
+  }

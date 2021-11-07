@@ -45,6 +45,13 @@ function validate () {
     }
 }
 
+function swap(){
+    let table = document.getElementById('tableNames');
+    table.style.direction = 'rtl';
+    let button = document.getElementById('swap');
+    button.disabled = true;
+}
+
 function ShowAll () {
     var newWindow = window.open('', "Results", "menubar=no,scrollbars=yes,width=1300px,height=500px");
     newWindow.document.write('<!DOCTYPE html>\n' +
@@ -52,8 +59,8 @@ function ShowAll () {
         '<head>\n' +
         '    <meta charset="UTF-8">\n' +
         '    <title>Forms</title>\n' +
-        '    <link href="style.css" rel="stylesheet">\n' +
-        '    <script type="text/javascript" src="script3.js"></script>\n' +
+        '    <link href="assets/css/style.css" rel="stylesheet">\n' +
+        '    <script type="text/javascript" src="assets/js/script.js"></script>\n' +
         '</head>\n' +
         '<body>\n' +
         '<div class="wrapper">' +
@@ -70,6 +77,7 @@ function ShowAll () {
         '\n' +
         '        <button name="send" type="button"  onclick="window.close()">Main</button>\n' +
         '        <br><br>\n' +
+        '        <button id=swap onclick=swap()> Swap </button>' +
         '        <button name="send" type="button" disabled>Results</button>' +
         '</nav>\n' +
         '    <aside class="aside"></aside>\n' +
