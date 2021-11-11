@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <img id="img" src='1.jpg'>
+        <button onclick="imgClass()">Click</button>
+        <p>Clicks: <span id="clicks">0</span></p>
+    </body>
+    <script>
+        function imgClass() {
+            let img = document.getElementById('img');
+            if (img.style.display == 'none') {
+                img.style.display = 'inline';
+            } else {
+                img.style.display = 'none';
+            }
+            let clicks = document.getElementById('clicks');
+            let intClicks = Number(clicks.innerText) + 1;
+            clicks.innerText = intClicks.toString();
+        }
+    </script>
+</html>

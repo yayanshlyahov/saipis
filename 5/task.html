@@ -1,0 +1,27 @@
+<body>
+    <button id="btn">Click</button>
+</body>
+<script>
+
+class Student {
+    constructor(name) {
+        this.name = name;
+        this.click = [];
+    }
+
+    push_back() {
+        this.click.push(123);
+        console.log(this.click);
+    }
+}
+
+var st = new Student('Yan');
+
+var btn = document.getElementById('btn')
+
+btn.addEventListener('click', () => {
+    console.log(123);
+    st.push_back();
+})
+
+</script>
