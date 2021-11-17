@@ -1,0 +1,21 @@
+img{
+    height: 200px;
+    width: 300px;
+}
+
+input[type="button" i]{    background-color:black;
+    color:white;
+    font-size: 17px;    
+}
+input[type="button" i]:hover{
+    background-color:lightblue;
+    color:black;
+}
+body{
+    font-size: 20px;
+}
+.main_wrapper{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}

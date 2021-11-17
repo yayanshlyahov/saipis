@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.liClass{
+    color: red;
+    font-size: 30px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#first-button").click(function(){
+    $('#list1 li').each(function(i){
+        const value = $(this).text();
+        $(`#list${value[0]}`).append(`<li>${value}</li>`);
+    });
+    $('#list1').empty();
+    $('#list1').append('Now list1 is empty');
+    $("h5").each(function(i){
+        $(this).replaceWith(`<h3>${$(this).text()}</h3>`);
+    });
+    $("#first-button").prop('disabled', true);
+    $("#second-button").prop('disabled', false);
+  });
+  $("#second-button").click(function(){
+    $('#listB li').each(function(i){
+        $(this).replaceWith(`<li>second${$(this).text()}</li>`);
+    });
+    $('#listC li').each(function(i){
+        $(this).replaceWith(`<li>${$(this).text()}third</li>`);
+    });
+    $('#listB li').each(function(i){
+        if (i % 2 == 0) {
+            $(this).addClass('liClass');
+        }
+    });
+    $('#listC li').each(function(i){
+        if (i % 2 == 0) {
+            $(this).addClass('liClass');
+        }
+    });
+    $("#second-button").prop('disabled', true);
+  })
+});
+</script>
+</head>
+    <body>
+        <button id="first-button">First button</button>
+        <button id="second-button" disabled>Second button</button>
+    </body>
+    <ul id="list1">
+        <h1>List 1</h1>
+        <li>Abnmslkd</li>
+        <li>BLgs.jkdfsd</li>
+        <li>Clkusdfkgsd</li>
+        <li>Asjagdjksdf</li>
+        <li>Ccccc</li>
+        <li>Bcccc</li>
+    </ul>
+    <ul id="list2">
+        <li>
+            <h5 id="headerA">A</h5>
+            <ul id="listA"></ul>
+        </li>
+        <li>
+            <h5 id="headerB">B</h5>
+            <ul id="listB"></ul>
+        </li>
+        <li>
+            <h5 id="headerC">C</h5>
+            <ul id="listC"></ul>
+        </li>
+    </ul> 
+</html>
