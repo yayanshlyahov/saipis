@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body{
-    background-color: bisque;
+    background-color: rgb(255, 196, 252);
 }
 div{
     padding-top: 50px;
@@ -36,4 +36,8 @@ button{
 button:hover{
 	background-color: white;
 	color:black;
+}
+.btn_wrapper{
+	display: flex;
+	margin: 20 auto;
 }

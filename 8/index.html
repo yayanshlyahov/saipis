@@ -142,18 +142,22 @@
           <option value="3">3</option>
         </select>
         <button class="buttonformat">Формат</button>
-        <form action="/readone" method="POST">
-          <button class="buttonread1">Считать с 1 файла</button>
-        </form>
-        <form action="/readtwo" method="POST">
-          <button class="buttonread2">Считать с 2 файла</button>
-        </form>
-        </select>
-        <form action="/" method="POST">
-            <input type="text" hidden name="massiv" class="forminput">
-            <input type="text" hidden name="massivcheck" class="formcheck">
-            <button>Отправить форму</button>
-       </form>
+     <div class="btn_wrapper">
+
+      <form action="/readone" method="POST">
+        <button class="buttonread1">Считать с 1 файла</button>
+      </form>
+      <form action="/readtwo" method="POST">
+        <button class="buttonread2">Считать с 2 файла</button>
+      </form>
+      </select>
+      <form action="/" method="POST">
+          <input type="text" hidden name="massiv">
+          <input type="text" hidden name="massivcheck">
+          <button>Отправить форму</button>
+     </form>
+     
+     </div>
        
     </div>
         <script src="script.js"></script>
